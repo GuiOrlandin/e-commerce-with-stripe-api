@@ -8,10 +8,7 @@ async function bootstrap() {
     rawBody: true,
   });
   app.enableCors({
-    origin: [
-      'https://e-commerce-with-stripe-9gq4ynunt-guiorlandins-projects.vercel.app',
-      'http://localhost:3000',
-    ],
+    origin: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
