@@ -1,4 +1,4 @@
-import { Product } from 'src/modules/products/entities/product';
+import { Product } from '../../products/entities/product';
 import { CheckoutItems, DataItems } from '../repositories/userRepository';
 
 export interface UserSchema {

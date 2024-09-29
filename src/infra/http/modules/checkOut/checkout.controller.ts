@@ -1,8 +1,8 @@
 import { Body, Controller, Post, Res, Request } from '@nestjs/common';
 import { CreateCheckoutBody } from './dtos/createCheckout';
-import { CheckOutUseCase } from 'src/modules/checkOut/UseCases/checkOutUseCase';
 import { AuthRequestModel } from '../auth/models/AuthRequestModel';
 import { Response } from 'express';
+import { CheckOutUseCase } from '../../../../modules/checkOut/UseCases/checkOutUseCase';
 
 @Controller('checkout')
 export class CheckoutController {

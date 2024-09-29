@@ -3,10 +3,10 @@ import { Injectable } from '@nestjs/common';
 import { PrismaUserMapper } from '../mappers/prismaUserMapper';
 import * as fs from 'fs';
 import * as path from 'path';
-import { ProductRepository } from 'src/modules/products/repositories/productRepository';
-import { Product } from 'src/modules/products/entities/product';
 import { PrismaService } from '../prisma.service';
 import { PrismaProductMapper } from '../mappers/prismaProductMapper';
+import { ProductRepository } from '../../../../modules/products/repositories/productRepository';
+import { Product } from '../../../../modules/products/entities/product';
 
 @Injectable()
 export class PrismaProductRepository implements ProductRepository {

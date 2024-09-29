@@ -1,0 +1,1 @@
+{"version":3,"file":"userWithoutPermission.js","sourceRoot":"","sources":["../../../../../src/modules/user/exceptions/userWithoutPermission.ts"],"names":[],"mappings":";;;AAAA,2CAA4C;AAC5C,mEAAgE;AAMhE,MAAa,8BAA+B,SAAQ,2BAAY;IAC9D,YAAY,EAAE,UAAU,EAAuC;QAC7D,KAAK,CAAC;YACJ,OAAO,EAAE,sBAAsB,UAAU,EAAE;YAC3C,MAAM,EAAE,mBAAU,CAAC,YAAY;SAChC,CAAC,CAAC;IACL,CAAC;CACF;AAPD,wEAOC"}

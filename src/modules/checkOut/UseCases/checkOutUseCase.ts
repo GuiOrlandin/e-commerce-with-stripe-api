@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { UserRepository } from 'src/modules/user/repositories/userRepository';
 import Stripe from 'stripe';
+import { UserRepository } from '../../user/repositories/userRepository';
 
 interface CheckOutItems {
   name: string;

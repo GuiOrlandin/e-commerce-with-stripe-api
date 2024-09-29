@@ -1,0 +1,1 @@
+{"version":3,"file":"appException.js","sourceRoot":"","sources":["../../../src/exceptions/appException.ts"],"names":[],"mappings":";;;AAAA,2CAA2D;AAU3D,MAAa,YAAa,SAAQ,sBAAa;IAC7C,YAAY,EAAE,KAAK,EAAE,OAAO,EAAE,MAAM,EAAqB;QACvD,KAAK,CACH;YACE,OAAO;YACP,KAAK;SACN,EACD,MAAM,CACP,CAAC;IACJ,CAAC;CACF;AAVD,oCAUC"}

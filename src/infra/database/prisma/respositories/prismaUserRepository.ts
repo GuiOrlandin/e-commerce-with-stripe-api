@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { User } from 'src/modules/user/entities/User';
 import {
   AdressItems,
   CheckoutItems,
@@ -7,7 +6,7 @@ import {
   DataItems,
   UserRepository,
   updateItems,
-} from 'src/modules/user/repositories/userRepository';
+} from '../../../../../src/modules/user/repositories/userRepository';
 import { PrismaService } from '../prisma.service';
 import { PrismaUserMapper } from '../mappers/prismaUserMapper';
 import * as fs from 'fs';
@@ -15,6 +14,7 @@ import * as path from 'path';
 import { JsonObject } from '@prisma/client/runtime/library';
 import { subMonths, format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import { User } from '../../../../modules/user/entities/User';
 
 @Injectable()
 export class PrismaUserRepository implements UserRepository {
