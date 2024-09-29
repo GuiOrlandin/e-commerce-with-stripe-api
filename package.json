@@ -9,9 +9,8 @@
     "node": "20.x"
   },
   "scripts": {
-    "build": "nest build",
+    "build": "nest build && npx prisma migrate deploy",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "vercel-build": "npx prisma migrate deploy",
     "start": "node dist/src/main.js",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
