@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CheckOutUseCase = void 0;
 const common_1 = require("@nestjs/common");
-const stripe_1 = require("stripe");
 const userRepository_1 = require("../../user/repositories/userRepository");
+const stripe_1 = require("stripe");
 let CheckOutUseCase = class CheckOutUseCase {
     constructor(userRepository) {
         this.userRepository = userRepository;

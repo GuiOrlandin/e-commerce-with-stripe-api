@@ -1,10 +1,10 @@
+import { CreateUserUseCase } from 'src/modules/user/useCase/createUserUseCase';
 import { CreateUserBody } from './dtos/createUserBody';
+import { FindUserByIdUseCase } from 'src/modules/user/useCase/findUserByIdUseCase';
 import { AuthRequestModel } from '../auth/models/AuthRequestModel';
 import { EditUserBody } from './dtos/editUserBody';
-import { CreateUserUseCase } from '../../../../modules/user/useCase/createUserUseCase';
-import { FindUserByIdUseCase } from '../../../../modules/user/useCase/findUserByIdUseCase';
-import { EditUserUseCase } from '../../../../modules/user/useCase/editUserUseCase';
-import { DashboardInfoUseCase } from '../../../../modules/user/useCase/dashboardsInfoUseCase';
+import { EditUserUseCase } from 'src/modules/user/useCase/editUserUseCase';
+import { DashboardInfoUseCase } from 'src/modules/user/useCase/dashboardsInfoUseCase';
 export declare class UserController {
     private createUserUseCase;
     private findUserById;

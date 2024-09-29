@@ -11,13 +11,13 @@ import {
 } from '@nestjs/common';
 import { diskStorage } from 'multer';
 import { CreateProductBody } from './dtos/createProductBody';
+import { CreateProductUseCase } from 'src/modules/products/useCase/createProductUseCase';
 import { AuthRequestModel } from '../auth/models/AuthRequestModel';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { extname } from 'path';
+import { DeleteProductUserUseCase } from 'src/modules/products/useCase/deleteProductUseCase';
 import { Public } from '../auth/decorators/isPublic';
-import { CreateProductUseCase } from '../../../../modules/products/useCase/createProductUseCase';
-import { DeleteProductUserUseCase } from '../../../../modules/products/useCase/deleteProductUseCase';
-import { FindAllProductUseCase } from '../../../../modules/products/useCase/findAllProductsUseCase';
+import { FindAllProductUseCase } from 'src/modules/products/useCase/findAllProductsUseCase';
 
 @Controller('product')
 export class ProductController {

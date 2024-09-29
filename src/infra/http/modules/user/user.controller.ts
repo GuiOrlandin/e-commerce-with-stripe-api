@@ -10,18 +10,18 @@ import {
   UploadedFile,
   UseInterceptors,
 } from '@nestjs/common';
+import { CreateUserUseCase } from 'src/modules/user/useCase/createUserUseCase';
 import { CreateUserBody } from './dtos/createUserBody';
 import { UserViewModel } from './viewModel/viewModel';
 import { Public } from '../auth/decorators/isPublic';
+import { FindUserByIdUseCase } from 'src/modules/user/useCase/findUserByIdUseCase';
 import { AuthRequestModel } from '../auth/models/AuthRequestModel';
 import { EditUserBody } from './dtos/editUserBody';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { extname } from 'path';
-import { CreateUserUseCase } from '../../../../modules/user/useCase/createUserUseCase';
-import { FindUserByIdUseCase } from '../../../../modules/user/useCase/findUserByIdUseCase';
-import { EditUserUseCase } from '../../../../modules/user/useCase/editUserUseCase';
-import { DashboardInfoUseCase } from '../../../../modules/user/useCase/dashboardsInfoUseCase';
+import { EditUserUseCase } from 'src/modules/user/useCase/editUserUseCase';
+import { DashboardInfoUseCase } from 'src/modules/user/useCase/dashboardsInfoUseCase';
 
 @Controller('user')
 export class UserController {

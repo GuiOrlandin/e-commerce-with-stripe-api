@@ -1,5 +1,5 @@
 import { HttpStatus } from '@nestjs/common';
-import { AppException } from '../../../exceptions/appException';
+import { AppException } from 'src/exceptions/appException';
 
 interface UserWithoutPermissionExceptionProps {
   actionName: string;

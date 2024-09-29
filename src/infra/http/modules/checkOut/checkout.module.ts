@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
+import { DatabaseModule } from 'src/infra/database/database.module';
 import { CheckoutController } from './checkout.controller';
-import { DatabaseModule } from '../../../database/database.module';
-import { CheckOutUseCase } from '../../../../modules/checkOut/UseCases/checkOutUseCase';
+import { CheckOutUseCase } from 'src/modules/checkOut/UseCases/checkOutUseCase';
 
 @Module({
   imports: [DatabaseModule],

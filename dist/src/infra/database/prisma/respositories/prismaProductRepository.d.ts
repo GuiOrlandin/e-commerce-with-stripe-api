@@ -1,6 +1,6 @@
+import { ProductRepository } from 'src/modules/products/repositories/productRepository';
+import { Product } from 'src/modules/products/entities/product';
 import { PrismaService } from '../prisma.service';
-import { ProductRepository } from '../../../../modules/products/repositories/productRepository';
-import { Product } from '../../../../modules/products/entities/product';
 export declare class PrismaProductRepository implements ProductRepository {
     private prisma;
     constructor(prisma: PrismaService);

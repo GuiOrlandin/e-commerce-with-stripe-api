@@ -1,6 +1,6 @@
 import { AuthRequestModel } from './models/AuthRequestModel';
 import { AuthenticatedRequestModel } from './models/authenticateRequestModel';
-import { SignInUseCase } from '../../../../modules/auth/useCase/signInUseCase';
+import { SignInUseCase } from 'src/modules/auth/useCase/signInUseCase';
 export declare class AuthController {
     private signInUseCase;
     constructor(signInUseCase: SignInUseCase);

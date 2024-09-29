@@ -1,4 +1,4 @@
-import { UserRepository } from '../../user/repositories/userRepository';
+import { UserRepository } from 'src/modules/user/repositories/userRepository';
 interface ValidateUserRequest {
     email: string;
     password_hash: string;

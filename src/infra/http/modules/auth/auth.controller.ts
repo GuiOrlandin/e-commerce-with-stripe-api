@@ -11,7 +11,7 @@ import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { Public } from './decorators/isPublic';
 import { AuthRequestModel } from './models/AuthRequestModel';
 import { AuthenticatedRequestModel } from './models/authenticateRequestModel';
-import { SignInUseCase } from '../../../../modules/auth/useCase/signInUseCase';
+import { SignInUseCase } from 'src/modules/auth/useCase/signInUseCase';
 
 @Controller()
 export class AuthController {

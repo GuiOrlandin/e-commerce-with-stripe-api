@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
+import { DatabaseModule } from 'src/infra/database/database.module';
+import { CreateProductUseCase } from 'src/modules/products/useCase/createProductUseCase';
 import { ProductController } from './product.controller';
-import { DatabaseModule } from '../../../database/database.module';
-import { CreateProductUseCase } from '../../../../modules/products/useCase/createProductUseCase';
-import { DeleteProductUserUseCase } from '../../../../modules/products/useCase/deleteProductUseCase';
-import { FindAllProductUseCase } from '../../../../modules/products/useCase/findAllProductsUseCase';
+import { DeleteProductUserUseCase } from 'src/modules/products/useCase/deleteProductUseCase';
+import { FindAllProductUseCase } from 'src/modules/products/useCase/findAllProductsUseCase';
 
 @Module({
   imports: [DatabaseModule],

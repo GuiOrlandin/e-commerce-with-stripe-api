@@ -9,10 +9,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DatabaseModule = void 0;
 const common_1 = require("@nestjs/common");
 const prisma_service_1 = require("./prisma/prisma.service");
-const prismaUserRepository_1 = require("./prisma/respositories/prismaUserRepository");
-const prismaProductRepository_1 = require("./prisma/respositories/prismaProductRepository");
-const productRepository_1 = require("../../modules/products/repositories/productRepository");
 const userRepository_1 = require("../../modules/user/repositories/userRepository");
+const prismaUserRepository_1 = require("./prisma/respositories/prismaUserRepository");
+const productRepository_1 = require("../../modules/products/repositories/productRepository");
+const prismaProductRepository_1 = require("./prisma/respositories/prismaProductRepository");
 let DatabaseModule = class DatabaseModule {
 };
 exports.DatabaseModule = DatabaseModule;

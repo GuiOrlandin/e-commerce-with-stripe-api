@@ -13,10 +13,10 @@ const user_module_1 = require("../user/user.module");
 const database_module_1 = require("../../../database/database.module");
 const jwt_1 = require("@nestjs/jwt");
 const singInDTOValidade_middleware_1 = require("./middleware/singInDTOValidade.middleware");
+const local_strategy_1 = require("../../../../modules/auth/strategies/local.strategy");
+const validateUseCase_1 = require("../../../../modules/auth/useCase/validateUseCase");
 const signInUseCase_1 = require("../../../../modules/auth/useCase/signInUseCase");
 const jwt_strategy_1 = require("../../../../modules/auth/strategies/jwt.strategy");
-const validateUseCase_1 = require("../../../../modules/auth/useCase/validateUseCase");
-const local_strategy_1 = require("../../../../modules/auth/strategies/local.strategy");
 let AuthModule = class AuthModule {
     configure(consumer) {
         consumer.apply(singInDTOValidade_middleware_1.SignInDTOValidateMiddleware).forRoutes('/signIn');

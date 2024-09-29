@@ -15,8 +15,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CheckoutController = void 0;
 const common_1 = require("@nestjs/common");
 const createCheckout_1 = require("./dtos/createCheckout");
-const AuthRequestModel_1 = require("../auth/models/AuthRequestModel");
 const checkOutUseCase_1 = require("../../../../modules/checkOut/UseCases/checkOutUseCase");
+const AuthRequestModel_1 = require("../auth/models/AuthRequestModel");
 let CheckoutController = class CheckoutController {
     constructor(checkoutUseCase) {
         this.checkoutUseCase = checkoutUseCase;

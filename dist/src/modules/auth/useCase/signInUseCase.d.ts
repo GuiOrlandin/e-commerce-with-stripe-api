@@ -1,5 +1,5 @@
 import { JwtService } from '@nestjs/jwt';
-import { User } from '../../user/entities/User';
+import { User } from 'src/modules/user/entities/User';
 interface SignInRequest {
     user?: User;
 }

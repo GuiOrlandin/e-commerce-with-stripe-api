@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PrismaUserMapper = void 0;
-const user_1 = require("../../../../modules/user/entities/user");
+const User_1 = require("../../../../modules/user/entities/User");
 class PrismaUserMapper {
     static toPrisma({ id, profile_picture, created_at, email, name, password_hash, adress, phone_number, role, purchasedProducts, soldProducts, number, }) {
         return {
@@ -24,7 +24,7 @@ class PrismaUserMapper {
         };
     }
     static toDomain({ email, name, password_hash, created_at, id, adress, phone_number, profile_picture, role, purchasedProducts, number, soldProducts, }) {
-        return new user_1.User({
+        return new User_1.User({
             email,
             name,
             password_hash,

@@ -7,7 +7,7 @@ import { JwtAuthGuard } from './infra/http/modules/auth/guards/jwt-auth.guard';
 import { AuthModule } from './infra/http/modules/auth/auth.module';
 import { CheckoutModule } from './infra/http/modules/checkOut/checkout.module';
 import { WebhookModule } from './infra/http/modules/webhook/webhook.module';
-import configs from '../config/config';
+import configs from 'config/config';
 import { ProductModule } from './infra/http/modules/product/product.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';

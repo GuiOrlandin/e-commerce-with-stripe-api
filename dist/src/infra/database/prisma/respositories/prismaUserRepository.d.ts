@@ -1,6 +1,6 @@
-import { AdressItems, CheckoutItems, DashboardItems, UserRepository, updateItems } from '../../../../../src/modules/user/repositories/userRepository';
+import { User } from 'src/modules/user/entities/User';
+import { AdressItems, CheckoutItems, DashboardItems, UserRepository, updateItems } from 'src/modules/user/repositories/userRepository';
 import { PrismaService } from '../prisma.service';
-import { User } from '../../../../modules/user/entities/User';
 export declare class PrismaUserRepository implements UserRepository {
     private prisma;
     constructor(prisma: PrismaService);

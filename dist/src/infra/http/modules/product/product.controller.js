@@ -16,12 +16,12 @@ exports.ProductController = void 0;
 const common_1 = require("@nestjs/common");
 const multer_1 = require("multer");
 const createProductBody_1 = require("./dtos/createProductBody");
+const createProductUseCase_1 = require("../../../../modules/products/useCase/createProductUseCase");
 const AuthRequestModel_1 = require("../auth/models/AuthRequestModel");
 const platform_express_1 = require("@nestjs/platform-express");
 const path_1 = require("path");
-const isPublic_1 = require("../auth/decorators/isPublic");
-const createProductUseCase_1 = require("../../../../modules/products/useCase/createProductUseCase");
 const deleteProductUseCase_1 = require("../../../../modules/products/useCase/deleteProductUseCase");
+const isPublic_1 = require("../auth/decorators/isPublic");
 const findAllProductsUseCase_1 = require("../../../../modules/products/useCase/findAllProductsUseCase");
 let ProductController = class ProductController {
     constructor(createProductUseCase, deleteProductUseCase, findAllProductsUseCase) {

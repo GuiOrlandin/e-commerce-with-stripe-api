@@ -1,4 +1,4 @@
-import { UserRepository } from '../../user/repositories/userRepository';
+import { UserRepository } from 'src/modules/user/repositories/userRepository';
 interface CheckOutItems {
     name: string;
     description: string;

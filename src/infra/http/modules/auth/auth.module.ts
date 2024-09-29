@@ -4,10 +4,10 @@ import { UserModule } from '../user/user.module';
 import { DatabaseModule } from '../../../database/database.module';
 import { JwtModule } from '@nestjs/jwt';
 import { SignInDTOValidateMiddleware } from './middleware/singInDTOValidade.middleware';
-import { SignInUseCase } from '../../../../modules/auth/useCase/signInUseCase';
-import { JwtStrategy } from '../../../../modules/auth/strategies/jwt.strategy';
-import { ValidateUserUseCase } from '../../../../modules/auth/useCase/validateUseCase';
-import { LocalStrategy } from '../../../../modules/auth/strategies/local.strategy';
+import { LocalStrategy } from 'src/modules/auth/strategies/local.strategy';
+import { ValidateUserUseCase } from 'src/modules/auth/useCase/validateUseCase';
+import { SignInUseCase } from 'src/modules/auth/useCase/signInUseCase';
+import { JwtStrategy } from 'src/modules/auth/strategies/jwt.strategy';
 
 @Module({
   imports: [

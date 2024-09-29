@@ -7,10 +7,10 @@ import {
   Req,
   RawBodyRequest,
 } from '@nestjs/common';
+import { SuccessCheckOutUseCase } from 'src/modules/checkOut/UseCases/SuccessCheckoutUseCase';
 import { Stripe } from 'stripe';
 import { Public } from '../auth/decorators/isPublic';
 import { Request } from 'express';
-import { SuccessCheckOutUseCase } from '../../../../modules/checkOut/UseCases/SuccessCheckoutUseCase';
 
 @Controller('webhook')
 export class WebhookController {

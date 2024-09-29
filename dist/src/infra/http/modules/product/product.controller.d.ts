@@ -1,8 +1,8 @@
 import { CreateProductBody } from './dtos/createProductBody';
+import { CreateProductUseCase } from 'src/modules/products/useCase/createProductUseCase';
 import { AuthRequestModel } from '../auth/models/AuthRequestModel';
-import { CreateProductUseCase } from '../../../../modules/products/useCase/createProductUseCase';
-import { DeleteProductUserUseCase } from '../../../../modules/products/useCase/deleteProductUseCase';
-import { FindAllProductUseCase } from '../../../../modules/products/useCase/findAllProductsUseCase';
+import { DeleteProductUserUseCase } from 'src/modules/products/useCase/deleteProductUseCase';
+import { FindAllProductUseCase } from 'src/modules/products/useCase/findAllProductsUseCase';
 export declare class ProductController {
     private createProductUseCase;
     private deleteProductUseCase;
