@@ -54,8 +54,8 @@ export class CheckOutUseCase {
         userId: user.id,
       },
       mode: 'payment',
-      success_url: `https://e-commerce-with-stripe-web-7ibc.vercel.app/success`,
-      cancel_url: 'https://e-commerce-with-stripe-web-7ibc.vercel.app/',
+      success_url: `${process.env.APP_URL}/success`,
+      cancel_url: `${process.env.APP_URL}`,
     });
 
     return session.url;
