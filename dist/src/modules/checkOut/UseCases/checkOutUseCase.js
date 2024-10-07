@@ -48,8 +48,8 @@ let CheckOutUseCase = class CheckOutUseCase {
                 userId: user.id,
             },
             mode: 'payment',
-            success_url: `http://localhost:5173/success`,
-            cancel_url: 'http://localhost:5173/',
+            success_url: `${process.env.APP_URL}/success`,
+            cancel_url: `${process.env.APP_URL}`,
         });
         return session.url;
     }

@@ -36,7 +36,7 @@ let WebhookController = class WebhookController {
             throw new Error(`Webhook Error: ${err.message}`);
         }
         switch (event.type) {
-            case "checkout.session.completed":
+            case 'checkout.session.completed':
                 const session = event.data.object;
                 await this.successCheckoutUseCase.execute({
                     sessionId: session.id,
